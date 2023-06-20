@@ -36,6 +36,7 @@ index <- rbind(index.2013, index.2014, index.2015, index.2016)
 rm(index.2013, index.2014, index.2015, index.2016)
 ```
 
+
 We have the text data needed to begin our analysis; however, we want to be able to access the financial data corresponding to the companies we are analyzing. This is done by linking the CIK values given by the SEC for companies to their stock tickers. The CIK-ticker mapping was downloaded from https://www.valuespreadsheet.com/iedgar/, and lists every publicly traded company's CIK, ticker, SIC code (which denotes the industry the company is classified as being in), and the exchange where that company's stock trades.
 
 ```{r}
