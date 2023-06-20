@@ -6,6 +6,7 @@
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+
 Stringr is the only required package to parse the financial statement text filing.
 
 ```{r, eval = FALSE}
