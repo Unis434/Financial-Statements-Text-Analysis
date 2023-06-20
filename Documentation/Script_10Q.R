@@ -3,6 +3,7 @@ library("lubridate")
 library("tidyr")
 library("purrr")
 
+
 returns_calculator <- function(the_ticker, filing_date, interval_length = 5, interval_type = "day"){
   start_date_beginning <- filing_date %>% # start date is first non-weekend day before the filing date.
     ymd(.) %m-% days(3)
