@@ -1,7 +1,7 @@
 ---
 title: "sentimentAnalysisAlgo"
-author: "Eric He"
-date: "August 7, 2017"
+author: "Unisa Kamara"
+date: "June 7, 2023"
 output: html_document
 ---
 

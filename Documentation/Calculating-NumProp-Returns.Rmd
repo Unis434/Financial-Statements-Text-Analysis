@@ -1,7 +1,7 @@
 ---
-title: "Calculating-NumProp-Returns"
-author: "Eric He"
-date: "August 28, 2017"
+title: "Documentation"
+author: "Unisa Kamara"
+date: "June 20, 2023"
 output: html_document
 ---
 
@@ -32,7 +32,7 @@ dfmstat_ratio <- function(dfmObj, dict){
 
 section_extractor <- function(statement, section){
   name <- statement$doc_id 
-  pattern <- paste0("(?i)°Item ", section, "[^\\w|\\d]", ".*°")
+  pattern <- paste0("(?i)ï¿½Item ", section, "[^\\w|\\d]", ".*ï¿½")
   section_hits <- str_extract_all(statement, pattern, simplify=TRUE) 
   if (is_empty(section_hits) == TRUE){
     empty_vec <- "empty"

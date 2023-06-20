@@ -1,6 +1,6 @@
 # Parsing Algorithm
-### Eric He
-### *June 22, 2017*
+### Unisa Kamara
+### *June 20, 2023*
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -41,8 +41,8 @@ autoParse <- function(x){
   str_replace(pattern = "((?i)<DESCRIPTION>).*?(?=<)", replacement = "") %>%
   str_replace(pattern = "(?s)(?i)<head>.*?</head>", replacement = "") %>%
   str_replace(pattern = "(?s)(?i)<(table).*?(</table>)", replacement = "") %>%
-  str_replace_all(pattern = "(?s)(?i)(?m)> +Item|>Item|^Item", replacement = ">°Item") %>% # Step 7
-  str_replace(pattern = "</TEXT>", replacement = "°</TEXT>")
+  str_replace_all(pattern = "(?s)(?i)(?m)> +Item|>Item|^Item", replacement = ">ï¿½Item") %>% # Step 7
+  str_replace(pattern = "</TEXT>", replacement = "ï¿½</TEXT>")
   str_replace_all(pattern = "(?s)<.*?>", replacement = " ") %>% # Step 8
   str_replace_all(pattern = "&(.{2,6});", replacement = " ") %>% # Step 9
   str_replace_all(pattern = "(?s) +", replacement = " ") %>% # Step 10
